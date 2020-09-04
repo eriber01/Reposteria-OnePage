@@ -470,7 +470,9 @@ footer h4{
         padding: 10px;
     }
 
-
+    .card-container .card-recetas{
+        width: 70%;
+    }
 
 
 
