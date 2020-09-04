@@ -15,7 +15,6 @@ btn_restarInicio.addEventListener('click',(eve)=>{
 
     //analiza el scroll para hacer visible el boton
     window.onscroll = function(){
-        console.log(document.documentElement.scrollTop)
         if(document.documentElement.scrollTop > 100){
             document.querySelector('#scroll-up').classList.add('display-up');
         }else{
@@ -48,3 +47,18 @@ btn_restarInicio.addEventListener('click',(eve)=>{
             })
         })
     }
+
+
+
+    //alerta del formulario
+
+    const form = document.querySelector('#form')
+
+    form.addEventListener('submit', (eve)=>{
+        eve.preventDefault()
+        swal("Good job!", "El formulario a sido enviado!", "success");
+        setTimeout(()=>{
+            window.location.reload()
+            form.reset()
+        },3000)
+    })
