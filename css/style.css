@@ -474,6 +474,10 @@ footer h4{
         width: 70%;
     }
 
+    /* responsive de servisios */
+    .servicio-form form{
+        width: 80%;
+    }
 
 
     /* responsive btn up */
