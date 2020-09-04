@@ -432,3 +432,23 @@ footer h4{
 .display-up{
     display: block;
 }
+
+
+/* estilos responsive */
+
+@media only screen and (max-width: 600px){
+
+    /* responsive header */
+    .title-page{
+        font-size: 1.5rem;
+        width: 0%;
+    }
+
+    .label-menu{
+        padding: 5px;
+    }
+
+    .abrir-menu:checked ~ .container-menu {
+        max-width: 50%;
+    }
+}
