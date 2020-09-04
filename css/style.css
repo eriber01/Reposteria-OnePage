@@ -479,9 +479,13 @@ footer h4{
         width: 80%;
     }
 
+    /* responsive nosotros */
 
+    .nosotros .nosotros-card{
+        width: 100%;
+    }
     /* responsive btn up */
     .up{
-        left: 75%;
+        left: 80%;
     }
 }
