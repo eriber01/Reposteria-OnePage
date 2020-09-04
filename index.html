@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D'Jeni Reposteria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,66 +12,186 @@
 
     <!-- seccion del header y menu list -->
     <header>
-        <div class="img-home">
-            <img src="img/ico/home-ico.png" alt="">
+
+        <div class="title-page">
+            <h1 id="btn-home">D'Jeny Reposteria</h1>
         </div>
-        <label for="">Menu</label>
-        <nav>
-            <ul>
-                <li>
-                    <a class="menu-list" id="recetas-link" href="#">Recetas</a>
-                </li>
-                <li>
-                    <a class="menu-list" id="servicios-link" href="#">Servicios</a>
-                </li>
-                <li>
-                    <a class="menu-list" id="nosotros-link" href="#">Nosotros</a>
-                </li>
-                <li>
-                    <a class="menu-list" id="contactos-link" href="#">Contactos</a>
-                </li>
-            </ul>
-        </nav>
+        <input type="checkbox" class="abrir-menu" name="" id="btn-menu" hidden>
+        <label class="label-menu" for="btn-menu">Menu</label>
+        
+        <div class="container-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="menu-list" id="inicio" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="menu-list" id="recetas-link" href="#">Recetas</a>
+                    </li>
+                    <li>
+                        <a class="menu-list" id="servicios-link" href="#">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="menu-list" id="nosotros-link" href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="menu-list" id="contactos-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+
+                <div class="derechos">
+                    <span>Todos los Derechos Reservados</span>
+                    <span>2020</span>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
 
     <!-- seccion de las recetas -->
     <section class="recetas">
-        <h2>Recetas</h2>
+        <div class="recetas-title">
+            <h2>Recetas</h2>
+        </div>
 
         <div class="recetas-container-main">
             <div class="card-recetas-main">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat eius sapiente consequatur dicta quasi cum natus, ab inventore illo voluptatum dolorum delectus repudiandae architecto placeat, magni quod nesciunt nihil.</p>
+                <img src="img/pastel de fresa.jpg" alt="">
+                <div class="card-text">
+                    <h3>Pastel de Fresas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat eius sapiente consequatur dicta quasi cum natus, ab inventore illo voluptatum dolorum delectus repudiandae architecto placeat, magni quod nesciunt nihil.</p>
+                </div>
             </div>
+            
+            <div class="ingredientes">
+                <h3 style="text-decoration: underline; font-size: 1.4rem; margin-bottom: 5px;">Ingredientes</h3>
+                <ul>
+                    <li>2 1/4 tazas de crema</li>
+                    <li>3 tazas de harina</li>
+                    <li>1/2 tazas de azúcar</li>
+                    <li>1 1/2 cucharaditas de polvo para hornear</li>
+                    <li>1 pizca de sal</li>
+                    <li>2 barras de mantequilla sin sal, cortados en pedazos</li>
+                    <li>2 huevos, batidos</li>
+                    <li>1/2 cucharaditas de vainilla líquida</li>
+                    <li>5 tazas de fresa, rebanadas</li>
+                    <li>3 cucharadas de azúcar glass</li>
+                    <li>betunes de vainilla</li>
+                </ul>                
+            </div>
+
+            <div class="preparacion">
+                <h3 style="text-decoration: underline; font-size: 1.4rem; margin-bottom: 5px;">Preparacion</h3>
+                <ul>
+                    <li>
+                        Precalienta el horno. En un bowl mezcla el harina, tres cucharadas de azúcar, el polvo para hornear y la pizca de sal. Agrega la mantequilla en pedacitos chiquitos.
+                    </li>
+                    <li>
+                        Mezcla con un tenedor en un bowl 3/4 de taza de crema, los huevos, la vainilla y la mezcla de la harina. Solo hasta que los ingredientes estén húmedos, no sobre batas.
+                    </li>
+                    <li>
+                        Agarra la masa y forma un círculo, ponla en una charola para hornear. Agrega 2 cucharadas de crema y esparce una cucharada de azúcar.
+                    </li>
+                    <li>
+                        Hornea hasta que se vea dorado más o menos por 25 minutos. Deja que se enfríe por completo.
+                    </li>
+                    <li>
+                        Macera las fresas con el cuarto de taza de azúcar que queda por una hora.
+                    </li>
+                    <li>
+                        Con una batidora eléctrica bate la crema con el azúcar restante a punto de turrón hasta formar picos. Una vez que el pastel esté completamente frío, partir por en medio a la mitad agrega la crema y las fresas rebanadas. Vuelve a tapar con la otra capa de pastel y en la parte superior poner el betún de vainilla y la mezcla de fresas maceradas.
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="recetas-container-main2"></div>
+        <div class="recetas-container-main2">
+
+            <div class="ingredientes">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>500 gramos de queso crema</li>
+                    <li>200 gramos de azúcar</li>
+                    <li>500 mililitros de nata, para montar 35% materia grasa</li>
+                    <li>200 mililitros de leche de vaca</li>
+                    <li>2 cucharaditas de vainilla líquida</li>
+                    <li>2 sobres de cuajada</li>
+                    <li>1 paquete de galleta de chocolate</li>
+                    <li>al gusto de caramelo</li>
+                </ul>
+            </div>
+
+            <div class="preparacion">
+                <h3 style="text-decoration: underline; font-size: 1.4rem; margin-bottom: 5px;">Preparacion</h3>
+                <ul>
+                    <li>
+                        Bate el azúcar con el queso, asegurándote que se mezclan bien.
+                    </li>
+                    <li>
+                        En un vaso coloca unos 100 mililitros de leche y disuelve los dos sobres de cuajada.
+                    </li>
+                    <li>
+                        Coloca la nata, el resto de la leche, la vainilla y el queso con azúcar que mezclamos antes, en un cazo a fuego lento. Cuando hierva, baja el fuego y agrega la cuajada. Mezcla y deja hervir, con el fuego lo más bajo posible, espera unos minutos a que espese la mezcla. Pasado el tiempo apaga el fuego y retira el cazo.
+                    </li>
+                    <li>
+                        Mientras esperas a que temple un poco aprovecha y monta la base. Coloca en un molde todas las las galletas de chocolate que te quepan enteras para luego rellenar los huecos con trocitos. Intenta rellenar lo más posible.
+                    </li>
+                    <li>
+                        Vierte la crema de queso por encima de la galleta y espera que enfríe bastante antes de meter en la nevera.
+                    </li>
+                    <li>
+                        Por último añade el caramelo líquido y deja la tarta sin desmoldar hasta el mismo momento de servir.
+                    </li>
+
+                </ul>
+            </div>
+
             <div class="card-recetas-main">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat eius sapiente consequatur dicta quasi cum natus, ab inventore illo voluptatum dolorum delectus repudiandae architecto placeat, magni quod nesciunt nihil.</p>
+                <img src="img/Tarta De Queso.jpg" alt="">
+                <div class="card-text">
+                    <h3>Tarta De Queso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat eius sapiente consequatur dicta quasi cum natus, ab inventore illo voluptatum dolorum delectus repudiandae architecto placeat, magni quod nesciunt nihil.</p>
+                </div>
             </div>
         </div>
 
         <div class="card-container">
             <div class="card-recetas">
-                <img src="" alt="">
+                <img src="img/bizcocho.jpg" alt="">
+                
+                <div class="text-card">
+                    <h3>Biscocho de Crema Batida</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam fugiat assumenda odit temporibus dolore.</p>
+                </div>
             </div>
 
             <div class="card-recetas">
-                <img src="" alt="">
+                <img src="img/tarta de manzana.jpg" alt="">
+                
+                <div class="text-card">
+                    <h3>Tarta de Manzana</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam fugiat assumenda odit temporibus dolore.</p>
+                </div>
             </div>
 
             <div class="card-recetas">
-                <img src="" alt="">
+                <img src="img/torta.jpg" alt="">
+                
+                <div class="text-card">
+                    <h3>Torta con Crema Batida</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam fugiat assumenda odit temporibus dolore.</p>
+                </div>
             </div>
 
             <div class="card-recetas">
-                <img src="" alt="">
+                <img src="img/chocolate.jpg" alt="">
+                
+                <div class="text-card">
+                    <h3>Pastel de Chocolate con Fresas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam fugiat assumenda odit temporibus dolore.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -78,17 +199,8 @@
 
     <!-- seccion de los servicios -->
     <section class="servicios">
-        <h2>Servicios</h2>
-        <div class="servicio-container">
-            <div class="servicio-page">
-                <h3>Nombre del Servicio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, atque! Provident cum hic impedit, aliquid vel adipisci et temporibus fuga ducimus aspernatur dolor iusto cupiditate obcaecati voluptates, delectus ut quidem.</p>
-            </div>
-
-            <div class="servicio-page">
-                <h3>Nombre del Servicio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, atque! Provident cum hic impedit, aliquid vel adipisci et temporibus fuga ducimus aspernatur dolor iusto cupiditate obcaecati voluptates, delectus ut quidem.</p>
-            </div>
+        <div class="servicios-title">
+            <h2>Servicios</h2>
         </div>
         
         <!-- formulario de la solicitud del servicio -->
@@ -99,11 +211,13 @@
                 <input type="number" name="" id="telefono" placeholder="Telefono">
 
                 <select name="" id="tipo-servicio">
-                    <option value="servicio1">Servicio1</option>
-                    <option value="servicio2">Servicio2</option>
+                    <option value="boda">Pasteles de Boda</option>
+                    <option value="cumpleanos">Surtido de Respoteria para Cumpleaños</option>
                 </select>
 
                 <textarea name="" id="" cols="30" rows="10" placeholder="Escriba una descripcion del Servicio requerido"></textarea>
+
+                <input type="submit" value="Enviar">
             </form>
         </div>
     </section>
@@ -111,13 +225,20 @@
     <!-- seccion de nosotros -->
 
     <section class="nosotros" >
+        
+        <div class="nosotros-title">
+            <h2>Nosotros</h2>
+        </div>
+
         <div class="nosotros-card">
-            <img src="" alt="">
-            <h3>Chef Tita</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos amet mollitia rem libero earum sequi soluta voluptatem necessitatibus, corrupti maiores quibusdam alias suscipit doloremque, rerum voluptatum voluptate explicabo perferendis cumque.</p>
+            <img src="img/tita2.jpg" alt="">
+            <div class="nosotros-text">
+                <h3>Chef Tita</h3>
+                <p>Considerada como la "Embajadora de la Nueva Cocina Dominicana en el Mundo," se convirtió en chef y dueña de un restaurante llamado Travesías. Se convirtió en miembro de la Asociación Dominicana de Chefs y se convirtió en líder del movimiento Chef's Against Hunger.</p>
+            </div>
         </div>
     </section>
 
-
+    <script src="main/main.js"></script>
 </body>
 </html>

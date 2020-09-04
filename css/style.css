@@ -4,12 +4,370 @@
     box-sizing: border-box;
 }
 
+
+/* estilos del header y el menu */
+.title-page{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    border-radius: 5px;
+    margin: 1rem;
+    text-shadow: 1px 1px 15px rgb(236, 138, 207);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.title-page h1{
+    cursor: pointer;
+}
+
 header{
     width: 100%;
     height: 100vh;
 
-    background-image: url(/img/home.jpg);
+    background-image: url(../img/home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header nav{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px;
+    background: -webkit-gradient(linear , left top, right bottom, color-stop(20%, rgba(136, 5, 77, 0.589)), color-stop(1%, rgba(55, 24, 56, 0.7)), color-stop(30%, rgba(255, 0, 149, 0.3)) );
+    /* background-color: rgba(0, 0, 0, 0.418); */
+    border-radius: 5px;
+}
+header nav ul{
+    list-style: none;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #ffff;
+    line-height: 60px;
+    display: block;
+    position: relative;
+    font-size: 1rem;
+}
+
+header nav ul a::before{
+    content: '';
+    position: absolute;
+    background-color:rgba(192, 108, 164, 0.5);
+    height: 80%;
+    left: -8%;
+    width: 0px;
+    transition: all 200ms ease-in-out;
+}
+
+header nav ul a::after{
+    content: '';
+    position: absolute;
+    background-color:rgba(192, 108, 164, 0.5);
+    height: 80%;
+    right: 60%;
+    width: 0px;
+    transition: all 200ms ease-in-out;
+}
+
+header nav ul a:hover::after, header nav ul a:hover::before{
+    width: 5%;
+}
+
+.container-menu{
+    float: left;
+    max-width: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.label-menu{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e11d74;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 450ms ease-in-out;
+
+}
+
+.label-menu:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px black;
+}
+.label-menu:active{
+    background-color: wheat;
+}
+
+.abrir-menu:checked ~ .container-menu{
+    max-width: 20%;
+}
+
+.derechos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100%;
+}
+
+
+/* estilos de la seccion recetas */
+    /* recetas principales */
+.recetas{
+    width: 100%;
+    height: 100%;
+}
+
+.recetas-title{
+    margin: 10px 0px 50px 0px;
+    background: linear-gradient(to right,#5e1234, #c51055);
+    width: 100%;
+}
+.recetas-title h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+}
+
+.card-recetas-main{
+    width: 30%;
+    box-shadow: 1px 1px 5px black;
+    margin: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.card-recetas-main .card-text{
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-recetas-main img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recetas-container-main, .recetas-container-main2{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.recetas-container-main{
+    background: linear-gradient(to right,#ff4b5c, #f53aad);
+}
+.recetas-container-main2{
+    margin-top: 5%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: linear-gradient(to right,#bd0184,#ff4b5c);
+}
+
+    /* estilos de los ingredientes */
+
+.ingredientes{
+    width: 40%;
+    height: 100%;
+    line-height: 30px;
+    padding: 30px;
+
+}
+.ingredientes h3, .preparacion h3{
+    text-align: center;
+    text-decoration: underline; 
+    font-size: 1.4rem; 
+    margin-bottom: 5px;
+}
+.ingredientes ul li, .preparacion ul li{
+    list-style: none;
+}
+
+.recetas-container-main .ingredientes{
+    
+    color: black;
+}
+
+.preparacion{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.preparacion ul li{
+    padding-bottom: 2%;
+}
+
+/* estilos resetas normales */
+
+.card-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-container .card-recetas{
+    width: 33.3%;
+    margin: 30px;
+    height: 100%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.card-container .card-recetas img{
+    width: 100%;
+}
+
+.card-container .text-card{
+    padding: 2rem;
+}
+
+.text-card h3{
+    padding-bottom: 1rem;
+}
+
+/* estilos de la seccion de servicios */
+
+.servicios{
+    width: 100%;
+    height: 100%;
+    background-color: /* rgba(173, 108, 235, 0.534) */ #e2488d8a;
+}
+
+.servicios-title{
+    margin: 10px 0px 50px 0px;
+    background: linear-gradient(to right,#e2488e, #9b315a);
+    width: 100%;
+}
+.servicios-title h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+}
+
+.servicios h2{
+    text-align: center;
+}
+
+.servicio-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.servicio-form form{
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    transition: all 450ms ease-in-out;
+}
+
+input, select, textarea{
+    width: 80%;
+    height: 60%;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #000;
+}
+
+input, textarea{
+    line-height: 30px;
+}
+
+input[type='submit']{
+    width: 40%;
+    height: 10%;
+    border: none;
+    margin: 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: rgb(247, 110, 212);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+
+    transition: all 450ms ease-in-out;  
+}
+
+input[type='submit']:hover{
+    transform: scale(1.05);
+}
+
+
+/* estilo de la seccion nosotros */
+.nosotros-title{
+    margin: 10px 0px 50px 0px;
+    background: linear-gradient(to right,#e2488e, #9b315a);
+    width: 100%;
+}
+.nosotros-title h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+}
+
+.nosotros h2{
+    text-align: center;
+}
+
+
+.nosotros{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background-color: rgb(255, 210, 232);
+}
+
+.nosotros .nosotros-card{
+    width: 33.3%;
+    margin: 30px;
+    height: 100%;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+
+.nosotros .nosotros-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nosotros .nosotros-card .nosotros-text{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
 }
