@@ -484,6 +484,14 @@ footer h4{
     .nosotros .nosotros-card{
         width: 100%;
     }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .contacto, footer .horario{
+        line-height: 20px;
+    }
     /* responsive btn up */
     .up{
         left: 80%;
