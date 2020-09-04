@@ -407,3 +407,28 @@ footer h4{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
+/*diseno button up inicio*/
+
+.up{
+    position: fixed;
+    bottom: 41%;
+    left: 95%;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 100% 10% 20% 20%;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.up:hover{
+    transform: scale(1.09);
+    background-color: #000000;
+}
+
+.no-display-up{
+    display: none;
+}
+
+.display-up{
+    display: block;
+}
