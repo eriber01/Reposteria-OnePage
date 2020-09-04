@@ -451,4 +451,31 @@ footer h4{
     .abrir-menu:checked ~ .container-menu {
         max-width: 50%;
     }
+
+    /* reponsive de .recetas */
+
+    .recetas-container-main, .recetas-container-main2{
+        height: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .recetas-container-main2{
+        padding-bottom: 10px;
+    }
+    .card-recetas-main, .ingredientes, .preparacion{
+        
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+
+
+
+
+    /* responsive btn up */
+    .up{
+        left: 75%;
+    }
 }
