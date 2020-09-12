@@ -25,17 +25,32 @@ btn_restarInicio.addEventListener('click',(eve)=>{
     //boton arriba
     Subir_o_Bajar('#scroll-up', 0)
     
-    //boton ir a recetas
-    Subir_o_Bajar('#recetas-link', 635)
-
-    //boton ir a servisios
-    Subir_o_Bajar('#servicios-link', 2845)
     
-    //boton ir a nosotros
-    Subir_o_Bajar('#nosotros-link', 3490)
+    //Nota: el codigo fue remplazado para realizar el scroll mediante html y css
     
     //boton ir a contactos
-    Subir_o_Bajar("#contactos-link", 9999999)
+//    Subir_o_Bajar("#contactos-link", 9999999)
+/*     
+    if(window.outerWidth < 1050){
+        //boton ir a recetas
+        Subir_o_Bajar('#recetas-link', 635)
+
+        //boton ir a servisios
+        Subir_o_Bajar('#servicios-link', 2845)
+        
+        //boton ir a nosotros
+        Subir_o_Bajar('#nosotros-link', 3490)
+    }else{
+
+        //boton ir a recetas
+        Subir_o_Bajar('#recetas-link', 635)
+
+        //boton ir a servisios
+        Subir_o_Bajar('#servicios-link', 2845)
+        
+        //boton ir a nosotros
+        Subir_o_Bajar('#nosotros-link', 3490)
+ */
     
     
     //logica de subir o bajar
