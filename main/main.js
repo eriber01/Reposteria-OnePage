@@ -21,7 +21,7 @@ btn_restarInicio.addEventListener('click',(eve)=>{
             document.querySelector('#scroll-up').classList.remove('display-up');
         }
     }
-    
+
     //boton arriba
     Subir_o_Bajar('#scroll-up', 0)
     
